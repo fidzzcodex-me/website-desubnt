@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBFDFF;
+  color: #0E1526;
+  font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #C7DBFA;
+  color: #0E1526;
+}
+
+:focus-visible {
+  outline: 2px solid #3E74DD;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.data-label {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  letter-spacing: 0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
